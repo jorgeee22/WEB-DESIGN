@@ -23,7 +23,7 @@
     <blockquote> "I am iron man"  <br/> <b>Tony Stark</b> </blockquote>  
     
     <p>These are some of my favorite <a href="destination.html" >
-      destinations</a>. But the best is this <a href="destination.html#sf">one</a>
+      destinations</a>. But the best is this <a href="destination.html#dub">one</a>
     <br/> This a link to <a href="https://www.google.com/">Google</a><br/>
   These are the <a href = "#bdays">birthdays</a> of my family. </p>
  </div>
@@ -41,11 +41,11 @@
     <h2> Education </h2>
     <ul>
       <li> <em>2006-2010</em> : <b>Colegio Nueva Senda</b>
-        <img src="img/colegio NS.png" alt="Logo" />  </li>
+       <a href="https://www.nuevasenda.com/" target="_blank"> <img src="img/colegio NS.png" alt="Logo" /> </a> </li>
       <li> <em>2010-2022</em> : <b>Colegio Mochis</b>
-        <img src="img/colegio mochis.png" alt="Logo" /> </li>
+        <a href="https://colegiomochis.edu.mx/" target="_blank"><img src="img/colegio mochis.png" alt="Logo" /> </a> </li>
       <li><em>2023-present</em> : <b>Universidad Panamericana, Campus Guadalajara</b> 
-        <img src="img/Up.jpg" alt="Logo" /> </li>
+        <a href="https://www.up.edu.mx/campus-guadalajara/"><img src="img/Up.jpg" alt="Logo" /> </a>  </li>
     </ul>
  </div>
 <div>
@@ -152,8 +152,68 @@
         <input type ="email" name = "email" placeholder="Email"/>
         <input type = "button" value = "button1"/>
         <input type ="submit" value = "Agregar"/> 
+        
       </form>
  </div>           
+
+ <h2>Weekly Schedule Form</h2>
+    
+    <form action="#" method="post">
+        
+        <!-- Date -->
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        <hr>
+        
+        <!-- Time Start -->
+        <label for="time-start">Time Start:</label>
+        <input type="time" id="time-start" name="time-start">
+        <hr>
+        
+        <!-- Time End -->
+        <label for="time-end">Time End:</label>
+        <input type="time" id="time-end" name="time-end">
+        <hr>
+        
+        <!-- Activity -->
+        <label for="activity">Activity:</label>
+        <input type="text" id="activity" name="activity">
+        <hr>
+        
+        <!-- Place -->
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place">
+        <hr>
+        
+        <!-- Type -->
+        <label for="type">Type:</label>
+        <select id="type" name="type">
+            <option value="school">School</option>
+            <option value="personal">Personal</option>
+            <option value="professional">Professional</option>
+            <option value="familiar">Familiar</option>
+            <option value="other">Other</option>
+        </select>
+        <hr>
+        
+        <!-- Notes -->
+        <label for="notes">Notes:</label>
+        <textarea id="notes" name="notes" rows="4" cols="50"></textarea>
+        <hr>
+        
+        <!-- Flag -->
+        <label for="flag">Flag:</label>
+        <input type="color" id="flag" name="flag">
+        <hr>
+        
+        <!-- Free/Busy -->
+        <label for="free-busy">Free/Busy:</label>
+        <input type="checkbox" id="free-busy" name="free-busy"> Busy
+        <hr>
+        
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
  <a href="#">Go to Top</a>
                   
 </body>

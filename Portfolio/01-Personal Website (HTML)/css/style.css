@@ -1,0 +1,114 @@
+
+
+  * {
+    color: silver;
+    font-family: "Pirata One", system-ui;
+    font-weight: 400;
+     font-style: normal;
+  }
+
+.flags {
+  width : 100px;
+  border : 1px dotted red;
+}
+
+.DestNames{
+  background-color: aqua;
+  text-align: center;
+}
+
+li{
+text-decoration: underline;
+}
+
+
+#mia {
+  background-color: aqua;
+  text-align: center;
+}
+
+#pic {
+  background-color: gray;
+  text-align: center;
+}
+#dub {
+  background-color: green;
+  text-align: center;
+}
+#tor {
+  background-color: red;
+  text-align: center;
+}#aus {
+  background-color:greenyellow;
+  text-align: center;
+}
+
+.mex {
+  padding: 5px;
+  border-radius: 30%;
+}
+
+ol li {
+  color: magenta;
+}
+
+#Top5 li {
+  text-transform: uppercase;
+}
+
+table {
+  border: 5px double violet;
+}
+
+thead {
+  background-color: blue;
+}
+
+th {
+  color: white;
+}
+
+.dest_img img {
+  display: inline;
+  width: 500px;
+  margin-left: 40%;
+}
+
+.dest_info{
+  display : inline-block
+}
+
+.img1{
+ position : fixed;
+ top: 50px;
+ left: 1000px;
+}
+
+.img2{
+  position : relative;
+  top: -20px;
+  left: 40px;
+ }
+
+ .img3{
+  position : absolute;
+  top: 50px;
+  left: 150px;
+ }
+
+ .img4{
+  position : sticky;
+  top: 200px;
+  left: 20px;
+ }
+
+ .content{
+  width: 50%;
+  text-align: center;
+
+ }
+
+img {
+   width: 10px;
+  
+  }
