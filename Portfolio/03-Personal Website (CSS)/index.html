@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorge Ruiz</title>
     <link href="./css/style.css" type = "text/css" rel="stylesheet"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet"> -->
     
 </head>
 <body>
@@ -67,7 +67,7 @@
     </p>
  </div>
 
-<div>
+<div class="edu">
     <h2> Education </h2>
     <ul>
      <li> <em>2006-2010</em> : <b><a href="https://www.nuevasenda.com/" target="_blank">Colegio Nueva Senda</a></b> 
@@ -77,14 +77,14 @@
         <a href="https://colegiomochis.edu.mx/" target="_blank"><img src="img/colegio mochis.png" alt="Logo" /> </a> </li>
       
         <li><em>2023-present</em> :<b> <a href="https://www.up.edu.mx/campus-guadalajara/" target="_blank">Universidad Panamericana, Campus Guadalajara</a></b> 
-        <a href="https://www.up.edu.mx/campus-guadalajara/"><img src="img/Up.jpg" alt="Logo" /> </a>  </li>
+        <a href="https://www.up.edu.mx/campus-guadalajara/" target="_blank"><img src="img/Up.jpg" alt="Logo" /> </a>  </li>
     </ul>
  </div>
 
 <div>
     <h2> Skills </h2>
      <ol>
-        <li>basketball 40%</li>
+        <li>Basketball 40%</li>
         <li>Web development 30%</li>
         <li>Artificial Intelligence 15%</li>
         <li>Data Analisis 10%</li>
@@ -115,7 +115,7 @@
             </ol>
 </div> 
 
-   <div >
+   <div class="BMT" >
           <h3>Books, Movies & TV shows</h3> 
           <ul>
                <li><span>Books</span><img src="img/png-harry.png" alt="Logo"  /> 
@@ -258,43 +258,47 @@
 <div>
     <h2>Heroes, Writers, Musicians</h2>
 
-    <table>
-      <thead>
-        <tr>
-            <th>Picture</th>
-            <th>Name</th>
-            <th>Date of Birth/Death</th>
-            <th>Profession</th>
-            <th>Achievements/Famous Work</th> 
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-            <td><img src="img/nelson.jpg " alt="Nelson Mandela"></td>
-            <td>Nelson Mandela</td>
-            <td>July 18, 1918 – December 5, 2013</td>
-            <td>Activist</td>
-            <td>First black president of South Africa and Nobel Peace Prize in 1993</td>
-        </tr>
-        <tr>
-            <td><img src="img/cs-lewis.jpeg" alt="Jane Austen"></td>
-            <td>C.S. Lewis</td>
-            <td>November 29, 1898 – November 22, 1963</td>
-            <td>Writer</td>
-            <td>Author of The chronicles of Narnia</td>
-        </tr>
-        <tr>
-            <td><img src="img/adele.jpg" alt="Ludwig van Beethoven"></td>
-            <td>Adele</td>
-            <td>May 5, 1988</td>
-            <td>Singer/Composer</td>
-            <td>16 Grammy Awards, 12 Brit Awards (including three for British Album of the Year), an Academy Award, a Primetime Emmy Award, and a Golden Globe Award. </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
- 
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="img/nelson.jpg" alt="nelson" style="width:100%">
+          <div class="container">
+            <h2>Nelson Mandela</h2>
+            <p class="title">Activist &amp; Founder</p>
+            <p>First black president of South Africa and Nobel Peace Prize in 1993.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="img/cs-lewis.jpeg" alt="CS" style="width:100%">
+          <div class="container">
+            <h2>C.S. Lewis</h2>
+            <p class="title">Writerr</p>
+            <p>Author of The chronicles of Narnia</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="img/adele.jpg" alt="Adele" style="width:100%">
+          <div class="container">
+            <h2>Adele</h2>
+            <p class="title">Singer</p>
+            <p>16 Grammy Awards, 12 Brit Awards (including three for British Album of the Year), an Academy Award, a Primetime Emmy Award, and a Golden Globe Award.</p>
+            <p>example@example.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
  
 <div>
     <a href="#"><p>Go to Top</p></a>

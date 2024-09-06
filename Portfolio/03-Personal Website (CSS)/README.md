@@ -17,7 +17,7 @@ This exercise will guide us to learn and experience the basic concepts of CSS in
   - Add a margin of 50px
 - Change the font to all h2s to:
   - 'Montserrat', sans-serif
-  - Font size 2.5 rem
+  - Font size 2.5 rem  
   - Padd it 10px from below.
   - Choose a secondary color that also plays well with your background
 - Change h3s to
