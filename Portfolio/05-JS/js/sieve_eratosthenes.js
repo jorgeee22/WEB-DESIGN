@@ -5,17 +5,31 @@
 
 // TODO: Adjust this script so it can work with the sieve.html file.
 
-var sieve = function (n) {
-  "use strict";
+function sieve (n) {
+  let isPrime = Array(n + 1).fill(true);
+    isPrime[0] = isPrime[1] = false; 
 
-  var array = [],
-    primes = [],
-    i,
-    j;
+    for (let p = 2; p * p <= n; p++) {
+        if (isPrime[p]) {
+            for (let i = p * p; i <= n; i += p) {
+                isPrime[i] = false;
+            }
+        }
+    }
 
-  // TODO: Implement the sieve of eratosthenes algorithm to find all the prime numbers under the given number.
+    let primes = [];
+    for (let i = 2; i <= n; i++) {
+        if (isPrime[i]) {
+            primes.push(i);
+        }
+    }
+    return primes;
+}
 
-  return primes;
-};
+function calculatePrimes() {
+  const n = parseInt(document.getElementById("num").value);
+  const primes = sieve(n);
+  document.getElementById("primes").textContent = primes.join(", ");
+}
 
 console.log(sieve(1000000));
