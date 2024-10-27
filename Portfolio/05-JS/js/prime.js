@@ -20,8 +20,14 @@ var getPrimeFactors = function (n) {
   var i,
     sequence = [];
 
-  //TODO: Check which numbers are factors of n and also check if
-  // that number also happens to be a prime
+    for (i = 2; i <= n; i++) {
+      while (n % i === 0) {     
+        if (isPrime(i)) {         
+          sequence.push(i);       
+        }
+        n /= i;                  
+      }
+    }
 
   return sequence;
 };

@@ -9,14 +9,28 @@
     <script type="text/javascript" src="js/prime.js"></script>
 </head>
 
-<body>
-    <div>
-        <label for="num">Write a number</label>
-        <input type="text" id="num" />
-        <button id="btn" onclick="getPrimeFactors()"> Go </button>
-        <br />
-        <span id="pf"></span>
-    </div>
-</body>
+<h1>Find the Prime Factors</h1>
 
+
+<input type="number" id="numberInput" placeholder="Enter a number" min="2">
+<button onclick="displayPrimeFactors()">SEARCH</button>
+
+
+<h3>Prime Factors:</h3>
+<div id="result"></div>
+</body>
+<script>
+    function displayPrimeFactors() {
+        const numberInput = document.getElementById("numberInput").value;
+        const resultElement = document.getElementById("result");
+
+
+        const primeFactors = getPrimeFactors(Number(numberInput));
+        
+
+        resultElement.textContent = primeFactors.length > 0 
+            ? primeFactors.join(", ")
+            : "No prime factors found";
+    }
+</script>
 </html>
