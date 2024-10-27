@@ -20,6 +20,7 @@ var myGameArea = {
   start: function () {
     this.canvas.width = 480;
     this.canvas.height = 270;
+    this.canvas.style.border = "2px solid black";
     this.context = this.canvas.getContext("2d");
     document.body.insertBefore(this.canvas, document.body.childNodes[0]);
     setInterval(updateGameArea, 20);
@@ -60,15 +61,19 @@ function component(width, height, color, x, y, type) {
     // Sets the new position of the object with x,y coordinates
     this.x += this.speedX;
     this.y += this.speedY;
+
     if (this.type == "image") {
-      if (this.x >= canvasWidth - this.width / 2 || this.x <= 0) {
-        //TODO: make the image bounce back when reaching the edges
-      }
-      if (this.y >= canvasHeight - this.height / 2 || this.y <= 0) {
-        //TODO: make the image bounce back when reaching the edges
-      }
+        
+        if (this.x >= canvasWidth - this.width / 2 || this.x <= 0) {
+            this.speedX = -this.speedX; 
+        }
+       
+        if (this.y >= canvasHeight - this.height / 2 || this.y <= 0) {
+            this.speedY = -this.speedY; 
+        }
     }
-  };
+};
+
 }
 
 // Global function. Independent from any object
@@ -84,11 +89,11 @@ function moveup() {
 }
 
 function movedown() {
-  //TODO: implement the move down functionality
+  myGamePiece.speedY +=1;
 }
 
 function moveleft() {
-  //TODO: implement the move left functionality
+  myGamePiece.speedX -= 1;
 }
 
 function moveright() {
