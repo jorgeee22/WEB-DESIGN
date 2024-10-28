@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "These exercises will guide us on how to create a simple Node script and how to execute it, as well as understanding how to get to use libraries inside of Node.",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jorge22",
+  "license": "ISC",
+  "dependencies": {
+    "star-wars-quotes": "^1.0.2",
+    "superheroes": "^4.0.0",
+    "supervillains": "^4.0.0"
+    
+  }
+  
+}
