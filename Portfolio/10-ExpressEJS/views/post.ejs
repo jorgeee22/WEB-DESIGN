@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+
+
+
+<h1><%= post.title %></h1>
+<p><%= post.content %></p>
+
+<form action="/edit-post/<%= post.id %>" method="POST">
+    <h2>Editar publicación</h2>
+    <textarea name="content"><%= post.content %></textarea>
+    <button type="submit">Guardar cambios</button>
+  </form>
+
+  <form action="/delete-post/<%= post.id %>" method="POST" style="margin-top: 1em;">
+    <button type="submit" onclick="return confirm('¿Estás seguro de que quieres eliminar esta publicación?');">Eliminar publicación</button>
+  </form>
+  
+  <a href="/home">Volver a publicaciones</a>
+
+<%- include('partials/footer') %>

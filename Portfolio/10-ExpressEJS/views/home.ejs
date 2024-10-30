@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+
+
+<h1>Hola, <%= username %>!</h1>
+
+<form action="/add-post" method="POST">
+    <input type="text" name="title" placeholder="Título" required>
+    <div>
+    <textarea name="content" placeholder="Escribe tu publicación aquí..." required></textarea>
+    <button type="submit">Publicar</button>
+</div>
+  </form>
+  
+  <h2>Publicaciones:</h2>
+<ul>
+  <% posts.forEach(post => { %>
+    <li>
+      <h3><%= post.title %></h3>
+      <p><%= post.content.substring(0, 100) %><%= post.content.length > 100 ? "..." : "" %></p>
+      <a href="/post/<%= post.id %>">Read More</a>
+    </li>
+  <% }) %>
+</ul>
+
+
+
+
+<%- include('partials/footer') %>

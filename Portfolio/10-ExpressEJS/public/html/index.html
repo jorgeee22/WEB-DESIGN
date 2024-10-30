@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" type = "text/css" rel="stylesheet" />
     <title>Landing page</title>
 </head>
 
 <body>
     <img src="../images/StarLion.png" alt="lion brewery" />
     <h1>Welcome to my landing page</h1>
-    <form>
+    
+  <!--  <form action="/login" method="get">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" />
-        <input type="submit" />
+        <button type="submit">Login (GET)</button>
+    </form>
+-->
+
+    <form action="/login" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <button type="submit">Login (POST)</button>
     </form>
 </body>
 
