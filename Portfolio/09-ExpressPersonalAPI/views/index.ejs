@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express test</title>
+</head>
+
+<body>
+    <% if (locals.error) { %>
+        <h3>
+            <%= error %>
+        </h3>
+        <% } else { %>
+            <h1>bienvenido!!!</h1>
+            <hr/>
+            <form action="/greet" method="get">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="submit" value="saluda-me">
+            </form>
+        <ul>
+        <% nombresArreglo.forEach((valor)=>{%>
+            <li><a href="/saludar?valor=<%=valor%>"><%= valor %></a>
+            </li>
+        <%});%>
+        </ul>
+        <hr/>
+            <form action="/tarea" method="post">
+                <input type="text" name="tarea" placeholder="Tarea">
+                <input type="submit" value="nueva-tarea">
+            </form>
+            <h1><strong>Cossasa</strong></h1>
+                <ul>
+            <% tareasArreglo.forEach((t, x)=>{%>
+            <li></a><%=t%><a href="/borrar?indice=<%=x%>">(B) </a>  <a href="/arriba?indice=<%=x%>">S </a> <a href="/abajp?indice=<%=x%>">A</li>
+            <%});%>
+                </ul>
+    <%}%>
+
+</body>
+</html>

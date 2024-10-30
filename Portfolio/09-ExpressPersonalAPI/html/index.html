@@ -13,13 +13,13 @@
         <h3>
             <%= error %>
         </h3>
-        <% } %>
+        <% } else {%>
             <form action="/greet" method="get">
                 Register:
                 <input type="text" name="name" id="name" placeholder="Name">
                 <input type="submit" value="go next">
             </form>
-
+        <%}%>
 </body>
 
 </html>
